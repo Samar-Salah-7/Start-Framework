@@ -1,0 +1,16 @@
+.copyright {
+  background-color: #1a252f;
+}
+footer {
+  background-color: var(--nav-footer-color);
+  color: #fff;
+}
+footer .row h3 {
+  font-size: 28px;
+  line-height: 33.6px;
+  padding: 20px 0px 0px;
+  font-weight: 500;
+}
+footer .row .sociaal-icons {
+  line-height: 16px;
+}

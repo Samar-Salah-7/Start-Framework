@@ -1,0 +1,7 @@
+.about {
+  min-height: 97vh;
+  background-color: var(--main-bg-color);
+}
+.about .container .row p {
+  line-height: 24px;
+}

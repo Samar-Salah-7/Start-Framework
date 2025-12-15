@@ -1,0 +1,25 @@
+.navbar {
+  background-color: var(--nav-footer-color);
+  color: #ffffff;
+}
+.active-color {
+  background-color: #1abc9c;
+}
+.nav-item {
+  margin-right: 20px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+nav.navbar .container a {
+  color: #ffffff !important;
+}
+nav.navbar .container a.nav-link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+nav.navbar .container a.navbar-brand {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+}

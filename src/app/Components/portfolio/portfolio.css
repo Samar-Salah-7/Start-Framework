@@ -1,0 +1,11 @@
+.portfolio h2 {
+  color: var(--nav-footer-color);
+}
+.img-layer {
+  opacity: 0;
+  background-color: var(--main-bg-color);
+  transition: 800ms opacity;
+}
+.img-layer:hover {
+  opacity: 1;
+}

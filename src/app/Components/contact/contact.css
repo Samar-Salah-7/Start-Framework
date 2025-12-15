@@ -1,0 +1,42 @@
+.contact h2 {
+  color: var(--nav-footer-color);
+}
+form a {
+  background-color: var(--main-bg-color);
+  color: #fff;
+  text-decoration: none;
+  /* padding: 10px; */
+}
+form .form-control {
+  box-shadow: none;
+}
+
+.custom-label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  color: var(--main-bg-color);
+  transition: all 500ms ease;
+}
+.form-control:not(:placeholder-shown) + .custom-label {
+  top: -20px;
+  opacity: 1;
+}
+.btn {
+  transition: transform 0.15s ease;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+@media screen and (max-width: 767.98px) {
+  form {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 768px) {
+  form {
+    width: 50%;
+  }
+}

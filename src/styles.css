@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --main-bg-color: #1abc9c;
+  --nav-footer-color: #2c3e50;
+}
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  margin: 0px;
+  padding: 0px;
+}
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+}
+body.modal-open {
+  overflow: auto !important;
+}

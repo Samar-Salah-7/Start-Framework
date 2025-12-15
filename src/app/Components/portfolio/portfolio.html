@@ -1,0 +1,47 @@
+<section class="portfolio text-center mx-auto py-5">
+  <div class="py-5">
+    <h2 class="text-uppercase fw-bolder fs-1 mb-3 pt-5">portfolio component</h2>
+    <app-star color="#2c3e50" bgColor="#2c3e50"></app-star>
+    <div class="container">
+      <div class="row g-4">
+        @for(image of images;track $index){
+        <div class="col-md-6 col-lg-4">
+          <div class="inner">
+            <div
+              class="image rounded-3 position-relative overflow-hidden"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              (click)="openImgModal(image.imgSrc)"
+            >
+              <img [src]="image.imgSrc" alt="portfolio-image" class="w-100 rounded-3" />
+              <div
+                class="img-layer position-absolute w-100 h-100 start-0 top-0 d-flex justify-content-center align-items-center text-white"
+              >
+                <i class="fa-solid fa-plus fa-6x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="for-modal">
+  <div
+    class="modal fade bg-primary bg-opacity-10"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="image">
+          <img [src]="selectedImg" alt="portfolio-image" class="w-100" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
