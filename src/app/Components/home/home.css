@@ -5,3 +5,8 @@
   background-color: var(--main-bg-color);
   min-height: 97vh;
 }
+@media screen and (max-width: 767.98px) {
+  .image img {
+    min-width: 50%;
+  }
+}
